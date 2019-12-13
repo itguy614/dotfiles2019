@@ -5,7 +5,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Add global gitignore
 rm $HOME/.gitignore
-ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
+ln -s $HOME/.dotfiles/.global-gitignore $HOME/.gitignore
 git config --global core.excludesfile $HOME/.gitignore
 
 # git config
