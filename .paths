@@ -1,0 +1,16 @@
+.
+./bin
+./node_modules/.bin
+./vendor/bin
+/usr/local/bin
+/usr/local/mysql/bin
+/usr/local/opt/node@8/bin
+/usr/local/opt/php@7.4/bin
+/usr/local/opt/php@7.4/sbin
+/usr/local/opt/php@7.3/bin
+/usr/local/opt/php@7.3/sbin
+/usr/local/opt/php@7.2/bin
+/usr/local/opt/php@7.2/sbin
+/usr/local/sbin
+~/.composer/vendor/bin
+~/bin

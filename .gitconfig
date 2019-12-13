@@ -1,0 +1,28 @@
+[user]
+	name = Kurt Wolf
+	email = kwolf@gohcl.com
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/kwolf/.gitignore
+    editor = vim
+[push]
+	default = simple
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    dump = cat-file -p
+    g = grep -I
+    lg = log -p
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    pb = publish-branch
+    pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+    rb = rbranch
+    rc = rank-contributors
+    rv = review
+    sm = show-merges
+    st = status
+    type = cat-file -t
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
