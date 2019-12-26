@@ -1,6 +1,5 @@
 .
 ./bin
-./node_modules/.bin
 ./vendor/bin
 /usr/local/bin
 /usr/local/mysql/bin
@@ -14,3 +13,4 @@
 /usr/local/sbin
 ~/.composer/vendor/bin
 ~/bin
+./node_modules/.bin
