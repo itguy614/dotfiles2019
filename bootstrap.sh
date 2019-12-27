@@ -43,6 +43,6 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 case `uname` in
     Darwin)
-        source $HOME/.dotfiles/bootstraps/osx.sh
+#        source $HOME/.dotfiles/bootstraps/osx.sh
     ;;
 esac

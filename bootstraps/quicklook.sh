@@ -10,4 +10,4 @@ unixutils=(
     quicklook-json
     webpquicklook
 )
-brew install ${unixutils[@]}
+brew cask install ${unixutils[@]}
