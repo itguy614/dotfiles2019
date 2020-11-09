@@ -14,9 +14,3 @@ composer global require laravel/envoy
 
 echo 'Install php-cs-fixer'
 composer global require friendsofphp/php-cs-fixer
-
-echo 'Install phpunit-watcher'
-composer global require spatie/phpunit-watcher
-
-echo 'Install mixed-content-scanner-cli'
-composer global require spatie/mixed-content-scanner-cli

@@ -25,4 +25,4 @@ unixutils=(
     valentina-studio
     visual-studio-code
 )
-brew install ${unixutils[@]}
+brew cask install ${unixutils[@]}
