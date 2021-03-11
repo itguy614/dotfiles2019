@@ -39,6 +39,8 @@ alias cr="composer require"
 alias cda="composer dumpautoload"
 alias cu="composer update"
 
+alias mylocal="mysql -u root -p -h localhost --protocol tcp"
+
 # GIT Shortcuts
 alias g="git"
 alias ga="git add "
@@ -78,6 +80,7 @@ alias nah="git reset --hard; git clean -df;"
 alias wip="git add . && git commit -m "wip""
 alias got="git "
 alias get="git "
+alias gtower="gittower git rev-parse --show-toplevel"
 
 # Show mount command output pretty and human readable
 alias lsmount="mount |column -t"

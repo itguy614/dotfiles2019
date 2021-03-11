@@ -1,6 +1,7 @@
 .
 ./bin
 ./vendor/bin
+/usr/local/opt/mysql-client/bin
 /usr/local/bin
 /usr/local/mysql/bin
 /usr/local/opt/node@8/bin

@@ -1,13 +1,12 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhistcnt =6
-let g:netrw_dirhist_6='/home/kwolf'
-let g:netrw_dirhist_5='/Users/kwolf'
-let g:netrw_dirhist_4='/Users/kwolf/code'
-let g:netrw_dirhist_3='/Users/kwolf/code/ui'
-let g:netrw_dirhist_2='/Users/kwolf/code/ui/dist'
-let g:netrw_dirhist_1='/Users/kwolf/code/ui/dist/fonts'
-let g:netrw_dirhist_0='/Users/kwolf/code/ui/dist'
-let g:netrw_dirhist_9='/Users/kwolf/code/ui'
-let g:netrw_dirhist_8='/'
-let g:netrw_dirhist_7='/Users'
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/kwolf/code/Adafruit-GFX-Library/fontconvert'
+let g:netrw_dirhist_3='/Users/kwolf/code/granville-firmware/src/Monitor'
+let g:netrw_dirhist_2='/Users/kwolf/code/granville-firmware/src'
+let g:netrw_dirhist_1='/Users/kwolf/code/granville-firmware'
+let g:netrw_dirhist_0='/Volumes/NO NAME/SoftAP'
+let g:netrw_dirhist_9='/Volumes/NO NAME'
+let g:netrw_dirhist_8='/Volumes/NO NAME/SoftAP'
+let g:netrw_dirhist_7='/Users/kwolf/code/Tenancy/src/Console/Commands'
+let g:netrw_dirhist_6='/Users/kwolf/code/Tenancy/src/Console'
+let g:netrw_dirhist_5='/Users/kwolf/code/Tenancy/src'

@@ -1,6 +1,7 @@
 [user]
 	name = Kurt Wolf
 	email = kwolf@gohcl.com
+	signingkey = 4ACD9C4075295BAA49FF1FDC3081877B8060A02E
 [credential]
 	helper = osxkeychain
 [core]
@@ -26,3 +27,7 @@
     st = status
     type = cat-file -t
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg

@@ -5,8 +5,7 @@ fonts=(
     font-3270
     font-anka-coder
     font-anonymous-pro
-    font-dejavusansmono-nerd-font
-    font-dejavusansmono-nerd-font-mono
+    font-dejavu-sans-mono-nerd-font
     font-fira-code
     font-fira-mono
     font-fira-sans
