@@ -41,6 +41,11 @@ alias cu="composer update"
 
 alias mylocal="mysql -u root -p -h localhost --protocol tcp"
 
+# Espressif environment
+alias goesp=". $HOME/esp/esp-idf/export.sh"
+alias esp="idf.py"
+alias ef="idf.py"
+
 # GIT Shortcuts
 alias g="git"
 alias ga="git add "
