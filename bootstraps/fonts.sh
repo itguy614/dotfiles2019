@@ -17,4 +17,4 @@ fonts=(
     font-noto-sans
     font-terminus
 )
-brew  install ${fonts[@]}
+brew install ${fonts[@]}
