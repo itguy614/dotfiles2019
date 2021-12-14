@@ -12,6 +12,9 @@ git config --global core.excludesfile $HOME/.gitignore
 rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
+rm -Rf $HOME/.git_template
+ln -s $HOME/.dotfiles/.git_template $HOME/.git_template
+
 # Symlink vim prefs
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc

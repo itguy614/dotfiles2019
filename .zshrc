@@ -79,10 +79,10 @@ plugins=(
     extract
     git
     gitignore
+    macos
     pip
     python
     brew
-    osx
     extract
     sudo
     vscode
