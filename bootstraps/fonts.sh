@@ -13,12 +13,8 @@ fonts=(
     font-go
     font-hack
     font-inconsolata
-    font-input
     font-noto-mono
     font-noto-sans
-    font-roboto
-    font-source-sans-pro
     font-terminus
-    font-ubuntu
 )
-brew cask install ${fonts[@]}
+brew  install ${fonts[@]}
