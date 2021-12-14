@@ -87,7 +87,6 @@ plugins=(
     sudo
     vscode
     web-search
-    zsh-dircolors-nord
     zsh-autosuggestions
 )
 

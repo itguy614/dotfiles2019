@@ -21,4 +21,4 @@ fonts=(
     font-terminus
     font-ubuntu
 )
-brew cask install ${fonts[@]}
+brew install ${fonts[@]}
