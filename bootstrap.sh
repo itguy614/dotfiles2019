@@ -22,6 +22,9 @@ ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 rm $HOME/.vim
 ln -s $HOME/.dotfiles/.vim $HOME/.vim
 
+rm $HOME/.hyper.js
+ln -s $HOME/.dotfiles/.hyper.js $HOME/.hyper.js
+
 echo "Installing Vundle"
 rm -Rf $HOME/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
