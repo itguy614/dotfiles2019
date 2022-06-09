@@ -116,6 +116,7 @@ function db {
 # Homebrew
 alias brewr="arch -x86_64 /usr/local/bin/brew $@"
 alias leg="arch -x86_64 $@"
+alias arm="arch -x86_64 $@"
 
 # Print Source Code
 alias printcode="a2ps -1 --line-numbers=1 -g -E"

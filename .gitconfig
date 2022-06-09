@@ -4,7 +4,6 @@
 [user]
 	name = Kurt Wolf
 	email = kwolf@gohcl.com
-	signingkey = 4ACD9C4075295BAA49FF1FDC3081877B8060A02E
 [credential]
 	helper = osxkeychain
 [core]
