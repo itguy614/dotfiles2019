@@ -16,7 +16,6 @@ alias editalias="vim ~/.dotfiles/.aliases; source ~/.dotfiles/.aliases"
 # PHP/Laravel Shortcuts
 alias tinker="php artisan tinker"
 alias tink="php artisan tinker"
-alias t="php artisan tinker"
 
 alias art="php artisan"
 

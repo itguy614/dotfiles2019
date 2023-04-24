@@ -1,29 +1,36 @@
 #!/bin/sh
 
+DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Add global gitignore
+mkdir -p $HOME/.local/bin
+ln -sf $DOTFILES/scripts/t $HOME/.local/bin/t
+
 rm $HOME/.gitignore
-ln -s $HOME/.dotfiles/.global-gitignore $HOME/.gitignore
+ln -s $DOTFILES/.global-gitignore $HOME/.gitignore
 git config --global core.excludesfile $HOME/.gitignore
 
-# git config
 rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
 rm -Rf $HOME/.git_template
 ln -s $HOME/.dotfiles/.git_template $HOME/.git_template
 
-# Symlink vim prefs
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
 rm $HOME/.vim
 ln -s $HOME/.dotfiles/.vim $HOME/.vim
 
+rm -Rf $HOME/.config/kitty
+ln -s $DOTFILES/kitty $HOME/.config/kitty
+
 rm $HOME/.hyper.js
 ln -s $HOME/.dotfiles/.hyper.js $HOME/.hyper.js
+
+ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 
 echo "Installing Vundle"
 rm -Rf $HOME/.vim/bundle/Vundle.vim

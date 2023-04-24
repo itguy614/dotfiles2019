@@ -8,17 +8,17 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 15,
+        fontSize: 13,
         // font family with optional fallbacks
-        fontFamily: '"Operator Mono SSm", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily: '"JetBrainsMono Nerd Font Mono","Operator Mono SSm", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
         fontWeightBold: 'bold',
         // line height as a relative unit
-        lineHeight: 1.2,
+        lineHeight: 1.75,
         // letter spacing as a relative unit
-        letterSpacing: 0,
+        letterSpacing: 2,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
         cursorColor: 'rgba(248,28,229,0.8)',
         // terminal text color under BLOCK cursor
@@ -28,10 +28,10 @@ module.exports = {
         // set to `true` (without backticks and without quotes) for blinking cursor
         cursorBlink: true,
         // color of the text
-        foregroundColor: '#fff',
+        foregroundColor: '#f8f8f2',
         // terminal background color
         // opacity is only supported on macOS
-        backgroundColor: '#333',
+        backgroundColor: '#282a36',
         hyperTransparent: {
             opacity: 0.2,
             vibrancy: 'dark'
@@ -39,7 +39,7 @@ module.exports = {
         // terminal selection color
         selectionColor: 'rgba(248,28,229,0.3)',
         // border color (window, tabs)
-        borderColor: '#333',
+        borderColor: '#282a36',
         // custom CSS to embed in the main window
         css: '',
         // custom CSS to embed in the terminal window
@@ -55,7 +55,7 @@ module.exports = {
         showWindowControls: '',
         // custom padding (CSS format, i.e.: `top right bottom left`)
         // padding: '12px 14px',
-        padding: '0px 0px 0px 0px',
+        padding: '5px 5px 5px 10px',
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object
@@ -142,7 +142,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hyper-material-theme", "hyper-broadcast", "hyper-quit"],
+    plugins: ["hyper-broadcast", "hyper-quit", "hyper-dracula"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

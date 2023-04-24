@@ -30,6 +30,11 @@ call vundle#begin()						            " Begin plugin definitions
 
     Plugin 'reedes/vim-pencil'
 
+    Plugin 'joshdick/onedark.vim'
+    Plugin 'dracula/vim'
+
+    Plugin 'catppuccin/nvim', { 'as':'catppuccin' }
+
 call vundle#end()						            " End plugin definitions
 filetype plugin indent on
 

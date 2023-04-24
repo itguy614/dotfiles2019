@@ -8,7 +8,7 @@ export ZSH="/Users/kwolf/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="arrow"
+ZSH_THEME="gallifrey"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -88,7 +88,7 @@ plugins=(
     vscode
     web-search
     zsh-autosuggestions
-)
+ aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,3 +123,18 @@ source ~/.env
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pyenv configuration
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Enable shims and autocompletion for pyenv.
+eval "$(pyenv init -)"
+# Load pyenv-virtualenv automatically by adding
+# # the following to ~/.zshrc:
+#
+eval "$(pyenv virtualenv-init -)"
