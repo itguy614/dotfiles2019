@@ -4,11 +4,6 @@
 [user]
 	name = Kurt Wolf
 	email = kwolf@gohcl.com
-[credential]
-	helper = osxkeychain
-[core]
-	excludesfile = /Users/kwolf/.gitignore
-    editor = vim
 [push]
 	default = simple
 [alias]
@@ -29,17 +24,6 @@
     st = status
     type = cat-file -t
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[commit]
-	gpgsign = true
-	template = /Users/kwolf/.stCommitMsg
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [pull]
 	rebase = false
 [color "status"]
@@ -47,3 +31,11 @@
     changed = blue bold
     untracked = red ul
     branch = yellow black bold ul
+[pager]
+    log = less -X -F
+    show = less -X -F
+    diff = less -X -F
+[includeIf "gitdir:/Users"]
+    path = ~/.dotfiles/.gitconfig.macos
+[includeIf "gitdir:/home"]
+    path = ~/.dotfiles/.gitconfig.linux
